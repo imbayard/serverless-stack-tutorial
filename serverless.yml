@@ -44,6 +44,7 @@ functions:
       - http:
           path: notes
           method: post
+          authorizer: aws_iam
   get:
   # Calls the main function in get.js (get note by specific noteId)
   # path: /notes/{id}
@@ -53,6 +54,7 @@ functions:
       - http:
           path: notes/{id}
           method: get
+          authorizer: aws_iam
   list:
   # Calls the main function in list.js (list all notes)
   # - path: /notes
@@ -62,6 +64,7 @@ functions:
       - http: 
           path: notes
           method: get
+          authorizer: aws_iam
   update:
     # Calls the main function in update.js (update a note by noteId)
     # - path: /notes/{id}
@@ -71,6 +74,7 @@ functions:
       - http:
           path: notes/{id}
           method: put
+          authorizer: aws_iam
   delete:
     # Calls teh main function in delete.js (delete a note by noteId)
     # path: /notes/{id}
@@ -80,3 +84,4 @@ functions:
       - http:
           path: notes/{id}
           method: delete
+          authorizer: aws_iam

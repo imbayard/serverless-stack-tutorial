@@ -71,3 +71,12 @@ functions:
       - http:
           path: notes/{id}
           method: put
+  delete:
+    # Calls teh main function in delete.js (delete a note by noteId)
+    # path: /notes/{id}
+    # method: DELETE
+    handler: delete.main
+    events:
+      - http:
+          path: notes/{id}
+          method: delete

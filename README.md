@@ -1,9 +1,9 @@
 # API Endpoints
--POST (create a new note) - `https://h87yakzupk.execute-api.us-east-1.amazonaws.com/prod/notes`
--GET (get a single note by its id) - `https://h87yakzupk.execute-api.us-east-1.amazonaws.com/prod/notes/{id}`
--GET (get all notes from current user) - `https://h87yakzupk.execute-api.us-east-1.amazonaws.com/prod/notes`
--PUT (update a note by its id) - `https://h87yakzupk.execute-api.us-east-1.amazonaws.com/prod/notes/{id}`
--DELETE (delete a note by its id) - `https://h87yakzupk.execute-api.us-east-1.amazonaws.com/prod/notes/{id}`
+- POST (create a new note) - `https://h87yakzupk.execute-api.us-east-1.amazonaws.com/prod/notes`
+- GET (get a single note by its id) - `https://h87yakzupk.execute-api.us-east-1.amazonaws.com/prod/notes/{id}`
+- GET (get all notes from current user) - `https://h87yakzupk.execute-api.us-east-1.amazonaws.com/prod/notes`
+- PUT (update a note by its id) - `https://h87yakzupk.execute-api.us-east-1.amazonaws.com/prod/notes/{id}`
+- DELETE (delete a note by its id) - `https://h87yakzupk.execute-api.us-east-1.amazonaws.com/prod/notes/{id}`
 
 
 

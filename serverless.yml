@@ -62,4 +62,12 @@ functions:
       - http: 
           path: notes
           method: get
-    
+  update:
+    # Calls the main function in update.js (update a note by noteId)
+    # - path: /notes/{id}
+    # - method: PUT
+    handler: update.main
+    events:
+      - http:
+          path: notes/{id}
+          method: put

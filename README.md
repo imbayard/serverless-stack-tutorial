@@ -1,3 +1,16 @@
+# API Endpoints
+-POST (create a new note) - `https://h87yakzupk.execute-api.us-east-1.amazonaws.com/prod/notes`
+-GET (get a single note by its id) - `https://h87yakzupk.execute-api.us-east-1.amazonaws.com/prod/notes/{id}`
+-GET (get all notes from current user) - `https://h87yakzupk.execute-api.us-east-1.amazonaws.com/prod/notes`
+-PUT (update a note by its id) - `https://h87yakzupk.execute-api.us-east-1.amazonaws.com/prod/notes/{id}`
+-DELETE (delete a note by its id) - `https://h87yakzupk.execute-api.us-east-1.amazonaws.com/prod/notes/{id}`
+
+
+
+
+
+---
+
 # Serverless Node.js Starter [![Seed Status](https://api.seed.run/serverless-stack/serverless-nodejs-starter/stages/prod/build_badge)](https://console.seed.run/serverless-stack/serverless-nodejs-starter)
 
 A Serverless starter that adds ES6, TypeScript, serverless-offline, linting, environment variables, and unit test support. Part of the [Serverless Stack](http://serverless-stack.com) guide.

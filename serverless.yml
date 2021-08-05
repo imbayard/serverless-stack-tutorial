@@ -85,3 +85,13 @@ functions:
           path: notes/{id}
           method: delete
           authorizer: aws_iam
+  billing: 
+    # Calls the main function in billing.js (create a charge based on number of notes created)
+    # path: /billing
+    # method: POST
+    handler: billing.main
+    events:
+      - http:
+          path: billing
+          method: post
+          authorizer: aws_iam

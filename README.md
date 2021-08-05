@@ -4,7 +4,7 @@
 - GET (get all notes from current user) - `https://h87yakzupk.execute-api.us-east-1.amazonaws.com/prod/notes`
 - PUT (update a note by its id) - `https://h87yakzupk.execute-api.us-east-1.amazonaws.com/prod/notes/{id}`
 - DELETE (delete a note by its id) - `https://h87yakzupk.execute-api.us-east-1.amazonaws.com/prod/notes/{id}`
-
+- POST (enforce payments based on quantity of notes)- `https://h87yakzupk.execute-api.us-east-1.amazonaws.com/prod/billing`
 
 
 

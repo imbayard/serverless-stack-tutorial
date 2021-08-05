@@ -4,6 +4,11 @@ service: notes-api
 package:
   individually: true
 
+# Create our resources with separate CloudFormation templates
+resources:
+  # API Gateway Errors
+  - ${file(resources/api-gateway-errors.yml)}
+
 plugins:
   - serverless-bundle # Package our functions with Webpack
   - serverless-offline
@@ -45,6 +50,7 @@ functions:
       - http:
           path: notes
           method: post
+          cors: true
           authorizer: aws_iam
   get:
   # Calls the main function in get.js (get note by specific noteId)
@@ -55,6 +61,7 @@ functions:
       - http:
           path: notes/{id}
           method: get
+          cors: true
           authorizer: aws_iam
   list:
   # Calls the main function in list.js (list all notes)
@@ -65,6 +72,7 @@ functions:
       - http: 
           path: notes
           method: get
+          cors: true
           authorizer: aws_iam
   update:
     # Calls the main function in update.js (update a note by noteId)
@@ -75,6 +83,7 @@ functions:
       - http:
           path: notes/{id}
           method: put
+          cors: true
           authorizer: aws_iam
   delete:
     # Calls teh main function in delete.js (delete a note by noteId)
@@ -85,6 +94,7 @@ functions:
       - http:
           path: notes/{id}
           method: delete
+          cors: true
           authorizer: aws_iam
   billing: 
     # Calls the main function in billing.js (create a charge based on number of notes created)
@@ -95,4 +105,5 @@ functions:
       - http:
           path: billing
           method: post
+          cors: true
           authorizer: aws_iam
